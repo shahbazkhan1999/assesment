@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+Demonstration of React Drag and Drop Functionality
+This project demonstrates how to implement drag and drop functionality using React. The drag and drop feature allows users to interactively move elements around the screen by clicking and dragging.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Getting Started
+To run this project locally, follow these steps:
 
-## Available Scripts
+Navigate to the project directory:
+cd assesment
 
-In the project directory, you can run:
+Install the dependencies:
+npm install
 
-### `npm start`
+Start the development server:
+npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open your browser and visit http://localhost:3000 to see the application running.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Drag and Drop Implementation
+In this project, we have implemented drag and drop functionality using React's built-in support for HTML5 drag and drop events.
 
-### `npm test`
+Draggable Component: We have a Draggable component that represents the element that can be dragged. This component uses the draggable attribute to make it draggable and handles the necessary drag events.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Droppable Component: We also have a Droppable component that represents the area where the draggable element can be dropped. This component handles the necessary drop events to perform actions when a draggable element is dropped onto it.
 
-### `npm run build`
+Event Handlers: The Draggable component defines event handlers for the dragstart and dragend events. These handlers are responsible for storing the data associated with the dragged element and updating the component state accordingly.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+State Management: The state management in this project is handled using React's useState hook. When a draggable element is dropped onto the drop zone, the component state is updated to reflect the changes, and the UI is re-rendered accordingly.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Working of Drag and Drop
+Start dragging: To initiate a drag operation, click and hold on a draggable element. The element will visually indicate that it is being dragged.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Dragging: While dragging, you can move the element around the screen by moving your mouse pointer. The element follows the movement of the mouse cursor.
 
-### `npm run eject`
+Dropping: To drop a draggable element onto a droppable area, release the mouse button. The element will be placed at the drop location, and the necessary actions will be performed based on the drop event handlers.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Updating UI: When a draggable element is dropped onto a droppable area, the component state is updated, triggering a re-render of the UI. You will see the changes reflected in the application interface.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+That's it! You now have a basic understanding of how to implement drag and drop functionality using React. Feel free to explore the code in this project and customize it to suit your specific requirements.
